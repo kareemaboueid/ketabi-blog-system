@@ -4,6 +4,7 @@
   "description": "Ketabi is a blog system powered by Node.js, Express, and MongoDB",
   "bin": "bin/createNodejsApp.js",
   "main": "src/index.js",
+  "type": "module",
   "repository": "https://github.com/kareemaboueid/ketabi-blog-system.git",
   "author": "Kareem Aboueid <kareem_aboueid@outlook.com>",
   "license": "MIT",
@@ -55,8 +56,7 @@
     "mongoose": "^8.6.0",
     "morgan": "^1.10.0",
     "pm2": "^5.4.2",
-    "winston": "^3.14.2",
-    "xss-clean": "^0.1.4"
+    "winston": "^3.14.2"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
