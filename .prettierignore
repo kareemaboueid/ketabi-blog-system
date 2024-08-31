@@ -1,0 +1,14 @@
+# Ignore specific files
+*.log
+*.txt
+.env
+
+# Ignore specific folders
+node_modules/
+dist/
+build/
+
+# Ignore package-lock.json
+package-lock.json
+.eslintrc.json
+.markdownlint.json

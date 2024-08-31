@@ -1,0 +1,73 @@
+{
+  "name": "ketabi-blog-system",
+  "version": "1.0.0",
+  "description": "Ketabi is a blog system powered by Node.js, Express, and MongoDB",
+  "bin": "bin/createNodejsApp.js",
+  "main": "src/index.js",
+  "repository": "https://github.com/kareemaboueid/ketabi-blog-system.git",
+  "author": "Kareem Aboueid <kareem_aboueid@outlook.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start ecosystem.config.json --no-daemon",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
+  },
+  "keywords": [
+    "blog",
+    "node",
+    "node.js",
+    "express",
+    "api",
+    "mongodb",
+    "mongoose",
+    "es6",
+    "joi",
+    "eslint",
+    "prettier",
+    "rest",
+    "jwt"
+  ],
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "http-status-codes": "^2.3.0",
+    "http-status-message": "^1.2.4",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.6.0",
+    "morgan": "^1.10.0",
+    "pm2": "^5.4.2",
+    "winston": "^3.14.2",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3"
+  }
+}
